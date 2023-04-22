@@ -1,0 +1,14 @@
+@mixin background-image-side($url) {
+  border-radius: 15px;
+  width: 35vw;
+  height: 35vh;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+}
+
+@mixin scale-bg() {
+  cursor: pointer;
+  animation: scale-bg 0.5s ease-out forwards
+}

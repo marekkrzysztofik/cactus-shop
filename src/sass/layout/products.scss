@@ -1,0 +1,36 @@
+.products {
+  margin: 1% auto;
+  justify-content: center;
+  width: 85vw;
+  &__left-side {
+    width: 50vw;
+    border-radius: 15px;
+    background-image: url(../images/packing.jpg);
+    height: 71.5vh;
+    background-size: cover;
+    background-position: bottom;
+    transition: all 0.2s;
+    &:hover {
+      @include scale-bg();
+    }
+  }
+  &__right-side {
+    flex-direction: column;
+    &--top {
+      @include background-image-side('../images/sukulent.jpg');
+      &:hover {
+        @include scale-bg();
+      }
+    }
+    &--bottom {
+      @include background-image-side('../images/kaktus.jpg');
+      &:hover {
+        @include scale-bg();
+      }
+    }
+  }
+  &--text {
+    align-items: flex-end;
+    color: $color-white;
+  }
+}

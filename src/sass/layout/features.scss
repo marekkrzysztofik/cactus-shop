@@ -1,0 +1,22 @@
+.features {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba(#edc6b1, 0.8)
+  );
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: 130px 86px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: space-around;
+    &--description {
+      text-align: center;
+    }
+  }
+  &--heading {
+    padding: 15px;
+    font-weight: 500;
+  }
+}

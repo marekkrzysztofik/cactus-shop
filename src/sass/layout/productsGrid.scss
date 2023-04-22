@@ -1,0 +1,61 @@
+.grid-box {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba(#edc6b1, 0.8)
+  );
+  border-radius: 15px;
+  //clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
+}
+.products-grid {
+  padding: 5% 0;
+  border-radius: 15px;
+  margin: 50px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 50vh;
+  grid-column-gap: 70px;
+  &__item {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    &--image-box {
+      clip-path: polygon(
+        50% 0%,
+        83% 12%,
+        100% 43%,
+        94% 78%,
+        68% 100%,
+        32% 100%,
+        6% 78%,
+        0% 43%,
+        17% 12% 
+      );
+    }
+    &--image {
+      border-radius: 15px;
+      height: 15rem;
+    }
+    &--header {
+      font-size: 1.3rem;
+    }
+    &--basket {
+      margin-top: 20px;
+      &--box {
+        justify-content: center;
+        margin: 25px 0;
+        background-color: #dd5353;
+        width: 150px;
+        height: 50px;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      &--box-img {
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

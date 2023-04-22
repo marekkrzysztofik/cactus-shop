@@ -1,0 +1,209 @@
+<template>
+  <div class="p">
+    <div class="flex justify-content-around header__nav">
+      <div class="flex align-items-center">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+        <h1 class="">Tu ci kaktus wyrośnie</h1>
+      </div>
+      <nav class="flex align-items-center">
+        <ul class="flex">
+          <li class="m-2">
+            <a class="" href="#footer">O nas</a>
+          </li>
+          <li class="m-2">
+            <a class="" href="#cars">Aktualności</a>
+          </li>
+          <li class="m-2">
+            <a class="" href="#pricing">Galeria</a>
+          </li>
+          <li class="m-2">
+            <a class="" href="#cta">Zamówienia</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">kaktus</span>
+          <span class="heading-primary--sub">ci tu wyrośnie</span>
+        </h1>
+
+        <a href="#section-tours" class="btn1 btn1--white btn1--animated"
+          >Sprawdź naszą ofertę</a
+        >
+      </div>
+    </header>
+    <h1 class="heading-secondary m-3">Zapoznaj się z naszymi</h1>
+    <div class="products flex">
+      <div class="products__left-side flex m-2">
+        <div class="products--text flex m-2">
+          <h2>Profesjonalne metody pakowania</h2>
+        </div>
+      </div>
+      <div class="products__right-side flex m-2">
+        <div class="products__right-side--top flex m-1">
+          <div class="products--text flex m-2">
+            <h2>Sukulenty</h2>
+          </div>
+        </div>
+        <div class="products__right-side--bottom flex m-1">
+          <div class="products--text flex m-2">
+            <h2>Kaktusy</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <h1 class="features--heading">Sklep z roślinami online</h1>
+      <p>Mała Szklarnia to miejsce dla pasjonatów roślin</p>
+      <div class="features__box">
+        <div class="features__box--image">
+          <img
+            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            alt=""
+            class="img"
+          />
+        </div>
+
+        <div class="features__box--image">
+          <img
+            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            alt=""
+            class="img"
+          />
+        </div>
+        <div class="features__box--image">
+          <img
+            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            alt=""
+            class="img"
+          />
+        </div>
+        <div class="features__box--image">
+          <img
+            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            alt=""
+            class="img"
+          />
+        </div>
+
+        <div class="features__box--heading">
+          <h2>Pakujemy z czułością</h2>
+        </div>
+        <div class="features__box--heading">
+          <h2>Wysyłamy na całą Polskę</h2>
+        </div>
+        <div class="features__box--heading">
+          <h2>Doradzamy i wspieramy</h2>
+        </div>
+        <div class="features__box--heading">
+          <h2>Stała zniżka dla pasjonatów</h2>
+        </div>
+        <div class="features__box--description">
+          <p class="opis">
+            Korzystamy z biodegradowalnych materiałów i opatulamy rośliny tak, by dotarły do Ciebie nienaruszone. Udało nam się to już ponad 100 000 razy!
+          </p>
+        </div>
+        <div class="features__box--description">
+          <p class="opis">
+            Zawsze możesz liczyć na pomoc naszych roślinnych doradców, a jeśli
+            zamówienie nie spełni Twoich oczekiwań, otrzymasz zwrot lub
+            rekompensatę.
+          </p>
+        </div>
+        <div class="features__box--description">
+          <p class="opis">
+            Ponad 99% naszych paczek dociera do celu już następnego dnia po nadaniu. Niezależnie od tego, w które miejsce je wezwiesz. Aha, wysyłamy od poniedziałku do czwartku.
+          </p>
+        </div>
+        <div class="features__box--description">
+          <p class="opis">
+            Możesz otrzymać nawet 15% rabatu na roślinne zakupy! Wystarczy, że założysz konto w Małej Szklarni i… to tyle - możesz korzystać ze zniżki dla pasjonatów.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="heading-secondary m-3">Najpopularniejsze produkty</h1>
+    <div class="grid-box">
+      <div class="products-grid">
+        <div class="products-grid__item flex column">
+          <div class="products-grid__item--image-box">
+            <img
+              class="products-grid__item--image"
+              src="/images/kaktus1.webp"
+              alt="pizza image"
+            />
+          </div>
+          <h2 class="products-grid__item--header m-2">
+            ZAMIOCULCAS ZAMIOFOLIA
+          </h2>
+          <div class="products-grid__item--basket">
+            <p class="products-grid__item--price">
+              <span>24,00</span>
+              <span>zł</span>
+            </p>
+            <div class="products-grid__item--basket--box flex">
+              <img
+                class="products-grid__item--basket--box-img"
+                src="/images/cart.svg"
+                alt="cart icon"
+              />
+              <h5 class="margin-0">Add to cart</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-grid__item flex column">
+          <div class="products-grid__item--image-box">
+            <img
+              class="products-grid__item--image"
+              src="/images/kaktus2.webp"
+              alt="pizza image"
+            />
+          </div>
+          <h2 class="products-grid__item--header m-2">KAKTUS OPUNCJA</h2>
+          <div class="products-grid__item--basket">
+            <p class="products-grid__item--price">
+              <span>24,00</span>
+              <span>zł</span>
+            </p>
+            <div class="products-grid__item--basket--box flex">
+              <img
+                class="products-grid__item--basket--box-img"
+                src="/images/cart.svg"
+                alt="cart icon"
+              />
+              <h5 class="margin-0">Add to cart</h5>
+            </div>
+          </div>
+        </div>
+        <div class="products-grid__item flex column">
+          <div class="products-grid__item--image-box">
+            <img
+              class="products-grid__item--image"
+              src="/images/kaktus3.webp"
+              alt="pizza image"
+            />
+          </div>
+          <h2 class="products-grid__item--header m-2">
+            SANSEWERIA SANSEVIERIA
+          </h2>
+          <div class="products-grid__item--basket">
+            <p class="products-grid__item--price">
+              <span>24,00</span>
+              <span>zł</span>
+            </p>
+            <div class="products-grid__item--basket--box flex">
+              <img
+                class="products-grid__item--basket--box-img"
+                src="/images/cart.svg"
+                alt="cart icon"
+              />
+              <h5 class="margin-0">Add to cart</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
