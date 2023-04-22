@@ -5,6 +5,9 @@
   width: 100vw;
   height: 5rem;
   background-color: #A9907E;
-  color: aliceblue;
+  color: $color-white;
   z-index: 1;
+  &--heading {
+    font-size: 20px;
+  }
 }

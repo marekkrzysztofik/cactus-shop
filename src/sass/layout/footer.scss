@@ -1,0 +1,10 @@
+.footer {
+  margin: auto;
+  justify-content: space-around;
+  color: $color-white;
+  background-color: #A9907E;
+  &__box {
+    width: 30%;
+    text-align: center;
+  }
+}

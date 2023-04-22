@@ -3,7 +3,7 @@
     <div class="flex justify-content-around header__nav">
       <div class="flex align-items-center">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
-        <h1 class="">Tu ci kaktus wyrośnie</h1>
+        <h1 class="header__nav--heading">Tu ci kaktus wyrośnie</h1>
       </div>
       <nav class="flex align-items-center">
         <ul class="flex">
@@ -57,7 +57,7 @@
     <div class="features">
       <div class="">
         <h1 class="features--heading">Sklep z roślinami online</h1>
-        <p>Mała Szklarnia to miejsce dla pasjonatów roślin</p>
+        <p>To miejsce dla pasjonatów roślin</p>
         <div class="features__box">
           <div class="features__box--item">
             <img
