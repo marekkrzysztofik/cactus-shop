@@ -68,58 +68,59 @@
 
         <div class="features__box--image">
           <img
-            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            src="@/../images/wysylamy-rosliny-na-cala-polske.png"
             alt=""
             class="img"
           />
         </div>
         <div class="features__box--image">
           <img
-            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
+            src="@/../images/roslinna-pomoc-jak-leczyc-rosliny.png"
             alt=""
             class="img"
           />
         </div>
         <div class="features__box--image">
-          <img
-            src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
-            alt=""
-            class="img"
-          />
+          <img src="@/../images/znizka-na-rosliny.png" alt="" class="img" />
         </div>
-
-        <div class="features__box--heading">
-          <h2>Pakujemy z czułością</h2>
+        <div>
+          <h2 class="features__box--heading">Pakujemy z czułością</h2>
         </div>
-        <div class="features__box--heading">
-          <h2>Wysyłamy na całą Polskę</h2>
+        <div>
+          <h2 class="features__box--heading">Wysyłamy na całą Polskę</h2>
         </div>
-        <div class="features__box--heading">
-          <h2>Doradzamy i wspieramy</h2>
+        <div>
+          <h2 class="features__box--heading">Doradzamy i wspieramy</h2>
         </div>
-        <div class="features__box--heading">
-          <h2>Stała zniżka dla pasjonatów</h2>
+        <div>
+          <h2 class="features__box--heading">Stała zniżka dla pasjonatów</h2>
         </div>
         <div class="features__box--description">
-          <p class="opis">
-            Korzystamy z biodegradowalnych materiałów i opatulamy rośliny tak, by dotarły do Ciebie nienaruszone. Udało nam się to już ponad 100 000 razy!
+          <p class="m-3">
+            Korzystamy z biodegradowalnych materiałów i opatulamy rośliny tak,
+            by dotarły do Ciebie nienaruszone. Udało nam się to już ponad 100
+            000 razy!
           </p>
         </div>
         <div class="features__box--description">
-          <p class="opis">
+          <p class="m-3">
             Zawsze możesz liczyć na pomoc naszych roślinnych doradców, a jeśli
             zamówienie nie spełni Twoich oczekiwań, otrzymasz zwrot lub
             rekompensatę.
           </p>
         </div>
         <div class="features__box--description">
-          <p class="opis">
-            Ponad 99% naszych paczek dociera do celu już następnego dnia po nadaniu. Niezależnie od tego, w które miejsce je wezwiesz. Aha, wysyłamy od poniedziałku do czwartku.
+          <p class="m-3">
+            Ponad 99% naszych paczek dociera do celu już następnego dnia po
+            nadaniu. Niezależnie od tego, w które miejsce je wezwiesz. Aha,
+            wysyłamy od poniedziałku do czwartku.
           </p>
         </div>
         <div class="features__box--description">
-          <p class="opis">
-            Możesz otrzymać nawet 15% rabatu na roślinne zakupy! Wystarczy, że założysz konto w Małej Szklarni i… to tyle - możesz korzystać ze zniżki dla pasjonatów.
+          <p class="m-3">
+            Możesz otrzymać nawet 15% rabatu na roślinne zakupy! Wystarczy, że
+            założysz konto w Małej Szklarni i… to tyle - możesz korzystać ze
+            zniżki dla pasjonatów.
           </p>
         </div>
       </div>

@@ -4,15 +4,21 @@
     rgba($color-primary-light, 0.8),
     rgba(#edc6b1, 0.8)
   );
+  height: max-content;
+  padding: 40px 40px 40px;
   &__box {
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: 130px 86px 1fr;
+    justify-content: center;
+    padding: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 130px 30px 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    justify-content: space-around;
     &--description {
       text-align: center;
+    }
+    &--heading {
+      font-size: 20px;
     }
   }
   &--heading {
