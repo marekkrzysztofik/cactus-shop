@@ -1,0 +1,39 @@
+.slider {
+  &__images {
+    position: relative;
+    width: 400%;
+    display: flex;
+    overflow-x: hidden;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 15px;
+    animation: slider 20s infinite;
+    img {
+      display: block;
+      width: 25%;
+      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    a {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: $color-white;
+      opacity: 0.75;
+      transition: opacity ease 250ms;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
