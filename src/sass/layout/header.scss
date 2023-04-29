@@ -11,6 +11,11 @@
   //clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-size: cover;
   background-position: top;
+  &__slider {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
   &__text-box {
     position: absolute;
     top: 75%;

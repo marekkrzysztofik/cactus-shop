@@ -1,7 +1,9 @@
 <template>
   <div class="p">
     <header class="header flex">
-      <Slider />
+      <div class="header__slider">
+        <Slider/>
+      </div>
       <div class="header__text-box">
         <a href="#section-tours" class="btn1 btn1--white btn1--animated"
           >Sprawdź naszą ofertę</a
