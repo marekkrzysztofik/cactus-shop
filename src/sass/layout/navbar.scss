@@ -2,9 +2,13 @@
   margin: 0 auto;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 96.5%;
   height: 5rem;
-  background-color: #A9907E;
-  color: aliceblue;
+  background-color: #A76D60;
+  color: $color-white;
   z-index: 1;
+  &--heading {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 30px;
+  }
 }

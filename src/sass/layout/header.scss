@@ -1,21 +1,38 @@
-.header {
-  margin: 2% 0;
-  position: relative;
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-rose, 0.8),
-      rgba($color-primary-light, 0.8)
-    ),
-    url(../images/2.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  background-size: cover;
-  background-position: top;
-  &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+header {
+  background-color: #a76d60;
+  margin-top: 1.5rem;
+  padding: 2rem 0;
+  .header {
+    margin-bottom: 4rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    &__slider {
+      margin: 1rem;
+      animation: moveInLeft 1s;
+    }
+    &__add {
+      margin: 1rem;
+      align-content: center;
+      height: 74vh;
+      width: 30%;
+      animation: moveInRight 1s;
+      img {
+        height: 4rem;
+      }
+    }
+    &__text-box {
+      align-items: center;
+      padding: 0 2rem;
+      border: 0.12rem solid;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &__button {
+      margin-top: 5rem;
+    }
   }
 }
