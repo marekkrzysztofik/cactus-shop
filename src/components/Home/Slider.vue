@@ -2,16 +2,16 @@
   <div class="slider">
     <div class="slider__slides">
       <div class="slider__slides--slide first">
-        <img src="@/../images/products.jpg" alt="" />
+        <img src="@/../images/slider1.webp" alt="" />
       </div>
       <div class="slider__slides--slide">
-        <img src="@/../images/2.jpg" alt="" />
+        <img src="@/../images/slider2.webp" alt="" />
       </div>
       <div class="slider__slides--slide">
-        <img src="@/../images/kwitnace.jpg" alt="" />
+        <img src="@/../images/slider3.webp" alt="" />
       </div>
       <div class="slider__slides--slide">
-        <img src="@/../images/1.jpg" alt="" />
+        <img src="@/../images/slider4.webp" alt="" />
       </div>
       </div>
   </div>

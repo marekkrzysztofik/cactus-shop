@@ -1,7 +1,7 @@
 .slider {
-  width: 800px;
-  height: 500px;
-  border: 0.2rem solid;
+  width: 52vw;
+  height: 74vh;
+  border: 0.12rem solid;
   border-radius: 10px;
   overflow: hidden;
   &__slides {
@@ -12,8 +12,8 @@
     &--slide {
       width: 20%;
       img {
-        width: 800px;
-        height: 500px;
+        width: 52vw;
+        height: 74vh;
       }
     }
   }

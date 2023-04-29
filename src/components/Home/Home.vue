@@ -1,15 +1,25 @@
 <template>
   <div class="p">
-    <header class="header flex">
-      <div class="header__slider">
-        <Slider/>
-      </div>
-      <div class="header__text-box">
-        <a href="#section-tours" class="btn1 btn1--white btn1--animated"
-          >Sprawdź naszą ofertę</a
-        >
+    <header>
+      <div class="header flex">
+        <div class="header__slider">
+          <Slider />
+        </div>
+        <div class="header__add flex column">
+          <div class="header__text-box flex column br-15">
+            <h2 class="m-3">Dalej się zastanawiasz jaką roślinę chcesz?</h2>
+            <p>Mało czasu żeby dbać o domową florę? Wprowadź do swojej przestrzeni sukulenty i poczuj połączenie z naturą. Pakujemy nasze rośliny w profesjonalny sposób. </p>
+            <img src="@/../images/arrow-down.svg" alt="">
+          </div>
+          <div class="header__button">
+            <a href="#section-tours" class="btn1 btn1--white btn1--animated"
+              >Sprawdź naszą ofertę</a
+            >
+          </div>
+        </div>
       </div>
     </header>
+
     <h1 class="heading-secondary m-3">Najpopularniejsze produkty</h1>
     <div class="grid-box">
       <div class="products-grid">
@@ -91,6 +101,7 @@
         </div>
       </div>
     </div>
+
     <div class="features">
       <div class="">
         <h1 class="features--heading">Sklep z roślinami online</h1>

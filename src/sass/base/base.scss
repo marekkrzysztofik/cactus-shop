@@ -7,6 +7,8 @@
 }
 body {
  // background-color: #FDF7C3;
+ padding: 2%;
+ background-color: #A76D60;
   color: $color-black;
   box-sizing: border-box;
   line-height: 1.7;
@@ -28,6 +30,9 @@ body {
 }
 .flex {
   display: flex;
+}
+.br-15 {
+  border-radius: 15px;
 }
 .column {
   flex-direction: column;
