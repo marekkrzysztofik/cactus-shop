@@ -1,37 +1,30 @@
-.grid-box {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(#DEDEA7, 0.8),
-    rgba(#edc6b1, 0.8)
-  );
+.products-box {
+  background-color: rgba($color-straw, 0.6);
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba($color-straw, 0.6),
+  //   rgba($color-sage, 0.6)
+  // );
   border-radius: 15px;
+}
+.grid-box {
+  
   //clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
 }
 .products-grid {
-  padding: 5% 0;
+  padding: 2% 0;
   border-radius: 15px;
-  margin: 50px auto;
+  margin: 1rem auto;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 50vh;
-  grid-column-gap: 70px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 60vh);
+  grid-column-gap: 50px;
   &__item {
     position: relative;
     margin: 0 auto;
     text-align: center;
     &--image-box {
-      clip-path: polygon(
-        50% 0%,
-        83% 12%,
-        100% 43%,
-        94% 78%,
-        68% 100%,
-        32% 100%,
-        6% 78%,
-        0% 43%,
-        17% 12% 
-      );
     }
     &--image {
       border-radius: 15px;
@@ -41,7 +34,7 @@
       font-size: 1.3rem;
     }
     &--basket {
-      margin-top: 20px;
+      margin-top: 0.7rem;
       &--box {
         justify-content: center;
         margin: 25px 0;

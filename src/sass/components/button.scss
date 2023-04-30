@@ -1,10 +1,9 @@
-
 .btn1 {
   &:link,
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 5rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -12,14 +11,15 @@
     font-size: 1rem;
   }
   &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
+    background-color: rgba($color-straw, 0.6);
+    color: $color-brick;
     &::after {
-      background-color: $color-white;
-      color: $color-grey-dark;
+      background-color: rgba($color-straw, 0.7);
+      color: $color-brick;
     }
   }
   &:hover {
+    color: $color-black;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     &::after {

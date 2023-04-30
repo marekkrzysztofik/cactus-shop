@@ -1,9 +1,12 @@
 header {
-  background-color: #a76d60;
-  margin-top: 1.5rem;
+  background-color: $color-brick;
+  margin: 3rem 0 4rem;
   padding: 2rem 0;
   .header {
-    margin-bottom: 4rem;
+    margin: 1rem;
+    @media only screen and (max-width: $small-scr) {
+      flex-direction: column;
+    }
     position: relative;
     justify-content: center;
     align-items: center;
@@ -13,26 +16,29 @@ header {
       margin: 1rem;
       animation: moveInLeft 1s;
     }
-    &__add {
+    &__card {
+      color: $color-black;
       margin: 1rem;
       align-content: center;
-      height: 74vh;
       width: 30%;
       animation: moveInRight 1s;
       img {
         height: 4rem;
       }
+      @media only screen and (max-width: $small-scr) {
+        width: 70%;
+      }
     }
     &__text-box {
       align-items: center;
-      padding: 0 2rem;
-      border: 0.12rem solid;
+      padding: 2rem;
+      border: 0.12rem solid $color-black;
       p {
         font-size: 1.2rem;
       }
     }
     &__button {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
   }
 }
