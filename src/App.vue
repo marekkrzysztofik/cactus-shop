@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-content-around header__nav">
+  <div class="flex header__nav">
     <div class="flex align-items-center">
       <h1 class="header__nav--heading">tu ci kaktus wyrośnie</h1>
     </div>
