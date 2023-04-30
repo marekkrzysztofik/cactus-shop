@@ -19,6 +19,22 @@
         </li>
       </ul>
     </nav>
+    <div class="search-box flex">
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Szukaj..." />
+        <button class="search__button">
+          <img class="search__icon" src="@/../images/search.svg" alt="" />
+        </button>
+      </form>
+      <div class="header__nav__buttons">
+        <button class="header__nav__buttons--btn">
+          <i class="pi pi-user" />
+        </button>
+        <button class="header__nav__buttons--btn">
+          <i class="pi pi-shopping-bag" />
+        </button>
+      </div>
+    </div>
   </div>
   <RouterView />
   <footer class="footer flex">
