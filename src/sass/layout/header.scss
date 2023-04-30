@@ -1,8 +1,9 @@
 header {
   background-color: $color-brick;
-  margin: 1.5rem 0 3.5rem;
+  margin: 3rem 0 4rem;
   padding: 2rem 0;
   .header {
+    margin: 1rem;
     @media only screen and (max-width: $small-scr) {
       flex-direction: column;
     }

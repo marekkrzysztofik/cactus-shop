@@ -1,10 +1,17 @@
 .footer {
   margin: auto;
+  height: 45vh;
   justify-content: space-around;
-  color: $color-white;
-  background-color: #A9907E;
+  align-items: end;
+  color: $color-black;
+  background-color: rgba($color-straw, 0.6);
+  clip-path: polygon(0% 100%, 6% 1%, 9% 12%, 15% 0%, 18% 14%, 26% 0%, 34% 11%, 36% 0%, 40% 13%, 50% 0%, 53% 12%, 68% 1%, 74% 16%, 81% 0%, 85% 12%, 94% 0%, 100% 100%, 0% 100%);
   &__box {
-    width: 30%;
+    width: 20%;
+    padding-bottom: 1rem;
     text-align: center;
+    p {
+      margin: 0;
+    }
   }
 }

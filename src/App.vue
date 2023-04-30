@@ -39,7 +39,7 @@
   <RouterView />
   <footer class="footer flex">
     <div class="footer__box">
-      <h1>Mała Szklarnia to miejsce dla każdego roślinomaniaka.</h1>
+      <h1>Mała Szklarnia.</h1>
       <p>
         Odwiedź nasz sklep z roślinami we Wrocławiu i Krakowie lub zamów rośliny
         doniczkowe online z bezpieczną i szybką wysyłką kurierską

@@ -8,8 +8,12 @@
         <div class="header__card flex column">
           <div class="header__text-box flex column br-15">
             <h2 class="m-3">Dalej się zastanawiasz jaką roślinę chcesz?</h2>
-            <p class="">Mało czasu żeby dbać o domową florę? Wprowadź do swojej przestrzeni sukulenty i poczuj połączenie z naturą. Pakujemy nasze rośliny w profesjonalny sposób. </p>
-            <img src="@/../images/arrow-down.svg" alt="">
+            <p class="">
+              Mało czasu żeby dbać o domową florę? Wprowadź do swojej
+              przestrzeni sukulenty i poczuj połączenie z naturą. Pakujemy nasze
+              rośliny w profesjonalny sposób.
+            </p>
+            <img src="@/../images/arrow-down.svg" alt="" />
           </div>
           <div class="header__button">
             <a href="#section-tours" class="btn1 btn1--white btn1--animated"
@@ -19,82 +23,212 @@
         </div>
       </div>
     </header>
-    <h1 class="heading-secondary m-3">Najpopularniejsze produkty</h1>
-    <div class="grid-box">
-      <div class="products-grid">
-        <div class="products-grid__item flex column">
-          <div class="products-grid__item--image-box">
-            <img
-              class="products-grid__item--image"
-              src="/images/kaktus1.webp"
-              alt="pizza image"
-            />
-          </div>
-          <h2 class="products-grid__item--header m-2">
-            ZAMIOCULCAS ZAMIOFOLIA
-          </h2>
-          <div class="products-grid__item--basket">
-            <p class="products-grid__item--price">
-              <span>24,00</span>
-              <span>zł</span>
-            </p>
-            <div class="products-grid__item--basket--box flex">
+    <div class="products-box">
+      <h1 class="heading-secondary m-3">Nasze bestsellery</h1>
+      <div class="grid-box">
+        <div class="products-grid">
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
               <img
-                class="products-grid__item--basket--box-img"
-                src="/images/cart.svg"
-                alt="cart icon"
+                class="products-grid__item--image"
+                src="/images/kaktus1.webp"
+                alt="pizza image"
               />
-              <h5 class="margin-0">Add to cart</h5>
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              ZAMIOCULCAS ZAMIOFOLIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="products-grid__item flex column">
-          <div class="products-grid__item--image-box">
-            <img
-              class="products-grid__item--image"
-              src="/images/kaktus2.webp"
-              alt="pizza image"
-            />
-          </div>
-          <h2 class="products-grid__item--header m-2">KAKTUS OPUNCJA</h2>
-          <div class="products-grid__item--basket">
-            <p class="products-grid__item--price">
-              <span>24,00</span>
-              <span>zł</span>
-            </p>
-            <div class="products-grid__item--basket--box flex">
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
               <img
-                class="products-grid__item--basket--box-img"
-                src="/images/cart.svg"
-                alt="cart icon"
+                class="products-grid__item--image"
+                src="/images/kaktus1.webp"
+                alt="pizza image"
               />
-              <h5 class="margin-0">Add to cart</h5>
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              ZAMIOCULCAS ZAMIOFOLIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="products-grid__item flex column">
-          <div class="products-grid__item--image-box">
-            <img
-              class="products-grid__item--image"
-              src="/images/kaktus3.webp"
-              alt="pizza image"
-            />
-          </div>
-          <h2 class="products-grid__item--header m-2">
-            SANSEWERIA SANSEVIERIA
-          </h2>
-          <div class="products-grid__item--basket">
-            <p class="products-grid__item--price">
-              <span>24,00</span>
-              <span>zł</span>
-            </p>
-            <div class="products-grid__item--basket--box flex">
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
               <img
-                class="products-grid__item--basket--box-img"
-                src="/images/cart.svg"
-                alt="cart icon"
+                class="products-grid__item--image"
+                src="/images/kaktus2.webp"
+                alt="pizza image"
               />
-              <h5 class="margin-0">Add to cart</h5>
+            </div>
+            <h2 class="products-grid__item--header m-2">KAKTUS OPUNCJA</h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
+              <img
+                class="products-grid__item--image"
+                src="/images/kaktus2.webp"
+                alt="pizza image"
+              />
+            </div>
+            <h2 class="products-grid__item--header m-2">KAKTUS OPUNCJA</h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
+              <img
+                class="products-grid__item--image"
+                src="/images/kaktus3.webp"
+                alt="pizza image"
+              />
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              SANSEWERIA SANSEVIERIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
+              <img
+                class="products-grid__item--image"
+                src="/images/kaktus3.webp"
+                alt="pizza image"
+              />
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              SANSEWERIA SANSEVIERIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
+              <img
+                class="products-grid__item--image"
+                src="/images/kaktus3.webp"
+                alt="pizza image"
+              />
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              SANSEWERIA SANSEVIERIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid__item flex column">
+            <div class="products-grid__item--image-box">
+              <img
+                class="products-grid__item--image"
+                src="/images/kaktus3.webp"
+                alt="pizza image"
+              />
+            </div>
+            <h2 class="products-grid__item--header m-2">
+              SANSEWERIA SANSEVIERIA
+            </h2>
+            <div class="products-grid__item--basket">
+              <p class="products-grid__item--price">
+                <span>24,00</span>
+                <span>zł</span>
+              </p>
+              <div class="products-grid__item--basket--box flex">
+                <img
+                  class="products-grid__item--basket--box-img"
+                  src="/images/cart.svg"
+                  alt="cart icon"
+                />
+                <h5 class="margin-0">Add to cart</h5>
+              </div>
             </div>
           </div>
         </div>
