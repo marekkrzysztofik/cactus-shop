@@ -1,10 +1,10 @@
 .products-box {
-  background-color: rgba($color-straw, 0.6);
-  // background-image: linear-gradient(
-  //   to right bottom,
-  //   rgba($color-straw, 0.6),
-  //   rgba($color-sage, 0.6)
-  // );
+ // background-color: rgba($color-straw, 0.6);
+ background-image: linear-gradient(
+  to left top,
+  rgba($color-sage, 0.85),
+  rgba($color-straw, 0.8)
+);
   border-radius: 15px;
 }
 .grid-box {
@@ -14,7 +14,7 @@
 .products-grid {
   padding: 2% 0;
   border-radius: 15px;
-  margin: 1rem auto;
+  margin: auto;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 300px);

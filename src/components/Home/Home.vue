@@ -301,22 +301,24 @@
         </div>
       </div>
     </div>
-    <h1 class="heading-secondary m-3">Zapoznaj się z naszymi</h1>
-    <div class="products flex">
-      <div class="products__left-side flex m-2">
-        <div class="products--text flex m-2">
-          <h2>Profesjonalne metody pakowania</h2>
-        </div>
-      </div>
-      <div class="products__right-side flex m-2">
-        <div class="products__right-side--top flex m-1">
+    <div class="products flex column">
+      <h1 class="heading-secondary m-3">Zapoznaj się z naszymi</h1>
+      <div class="flex">
+        <div class="products__left-side flex m-2">
           <div class="products--text flex m-2">
-            <h2>Sukulenty</h2>
+            <h2>Profesjonalne metody pakowania</h2>
           </div>
         </div>
-        <div class="products__right-side--bottom flex m-1">
-          <div class="products--text flex m-2">
-            <h2>Kaktusy</h2>
+        <div class="products__right-side flex m-2">
+          <div class="products__right-side--top flex m-1">
+            <div class="products--text flex m-2">
+              <h2>Sukulenty</h2>
+            </div>
+          </div>
+          <div class="products__right-side--bottom flex m-1">
+            <div class="products--text flex m-2">
+              <h2>Kaktusy</h2>
+            </div>
           </div>
         </div>
       </div>
