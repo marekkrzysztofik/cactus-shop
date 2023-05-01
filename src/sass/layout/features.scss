@@ -6,6 +6,9 @@
   );
   height: max-content;
   padding: 40px 40px 40px;
+  @media only screen and (max-width: $medium-scr) {
+    padding: 0;
+  }
   &__box { 
     display: grid;
     justify-content: center;
@@ -14,6 +17,12 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    @media only screen and (max-width: $medium-scr) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0;
+      padding: 0;
+    }
     &--item {
       padding: 2.5rem;
       text-align: center;

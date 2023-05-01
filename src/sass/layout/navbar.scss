@@ -1,5 +1,6 @@
 .header__nav {
   margin: 0 auto;
+  padding: 0 2rem;
   justify-content: space-around;
   width: 100%;
   position: fixed;
@@ -9,6 +10,12 @@
   background-color: $color-brick;
   color: $color-straw;
   z-index: 1;
+  nav {
+    margin-right: 1.5rem;
+    @media only screen and (max-width: $small-scr) {
+     display: none;
+    }
+  }
   &__buttons {
     &--btn {
       margin: 0 0 0 1rem;
@@ -23,21 +30,19 @@
   }
   &--heading {
     font-family: 'Tilt Prism', cursive;
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 .search-box {
-  width: 50%;
+  width: 45%;
   justify-content: end;
   align-items: center;
 }
 .search {
   width: 40%;
   display: flex;
-  @media only screen and (max-width: 500px) {
-    order: 1;
-    flex: 0 0 100%;
-    background-color: $color-straw;
+  @media only screen and (max-width: 1000px) {
+    width: 20%;
   }
   &__input {
     font-family: inherit;
