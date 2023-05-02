@@ -56,6 +56,24 @@
             </div>
           </div>
         </div>
+        <div class="p-3">
+          <button
+            v-if="!dropdown"
+            @click="productsShow"
+            class="products-grid--button"
+          >
+            <i class="pi pi-angle-down" />
+            <h5>Rozwiń</h5>
+          </button>
+          <button
+            v-if="dropdown"
+            @click="productsHide"
+            class="products-grid--button"
+          >
+            <i class="pi pi-angle-up" />
+            <h5>Zwiń</h5>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -130,7 +148,7 @@
       <div class="products__box flex">
         <div class="products__left-side flex m-2">
           <div class="products--text flex m-2">
-            <h2>Profesjonalne metody pakowania</h2>
+            <h2>Rośliny kwitnące</h2>
           </div>
         </div>
         <div class="products__right-side flex m-2">
@@ -150,7 +168,10 @@
   </div>
 </template>
 <script setup lang="ts">
-const products = [
+import { ref } from 'vue'
+
+const dropdown = ref(false)
+const allProducts = [
   {
     name: 'ZAMIOCULCAS ZAMIOFOLIA',
     price: 24,
@@ -192,4 +213,13 @@ const products = [
     image: '/images/kaktus2.webp',
   },
 ]
+const products = ref(allProducts.slice(0, 4))
+const productsShow = () => {
+  products.value = allProducts
+  dropdown.value = true
+}
+const productsHide = () => {
+  products.value = allProducts.slice(0, 4)
+  dropdown.value = false
+}
 </script>
