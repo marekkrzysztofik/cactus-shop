@@ -39,6 +39,7 @@
 
 @media only screen and (max-width: $small-scr) {
   .products {
+    margin: 3rem auto;
     width: 95vw;
     padding: 0;
     &__box {

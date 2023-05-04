@@ -35,8 +35,14 @@ body {
 .column {
   flex-direction: column;
 }
+.center {
+  justify-content: center;
+}
 .p {
   margin: 1rem 0;
   position: relative;
   text-align: center;
+}
+.margin-top-5 {
+  margin-top: 5rem;
 }

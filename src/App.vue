@@ -30,23 +30,28 @@
         <button class="header__nav__buttons--btn">
           <i class="pi pi-user" />
         </button>
-        <button class="header__nav__buttons--btn">
+        <router-link to="/basket"><button  class="header__nav__buttons--btn">
           <i class="pi pi-shopping-bag" />
-        </button>
+        </button></router-link>
       </div>
     </div>
   </div>
-  <RouterView />
+  <div class="margin-top-5"><RouterView /> </div>
+
+  
   <footer class="footer flex">
-    <div class="footer__box">
-      <h1>Mała Szklarnia.</h1>
-      <p>
-        Odwiedź nasz sklep z roślinami we Wrocławiu i Krakowie lub zamów rośliny
-        doniczkowe online z bezpieczną i szybką wysyłką kurierską
-      </p>
+    <div class="footer__box flex column">
+      <h1 class="heading-primary">Kontakt</h1>
+      <div class="flex">
+        <i class="pi pi-map-marker" />
+        <p>ul. Kaktusa 5, 00-000 Ogród</p>
+      </div>
+      <div class="flex">
+        <i class="pi pi-whatsapp" />
+        <p>123456789</p>
+      </div>
     </div>
     <div class="footer__box">
-      <h1>About us</h1>
       <p>Regulamin</p>
       <p>Polityka prywatności</p>
       <p>Zamówienia</p>
@@ -56,14 +61,11 @@
       <p>Metody płatności</p>
     </div>
     <div class="footer__box">
-      <h1>About us</h1>
-      <p>Regulamin</p>
-      <p>Polityka prywatności</p>
-      <p>Zamówienia</p>
-      <p>Zwroty</p>
-      <p>Reklamacje</p>
-      <p>Ochrona Danych Osobowych</p>
-      <p>Metody płatności</p>
+      <h1 class="heading-primary">tu ci kaktus wyrośnie</h1>
+      <div class="flex">
+        <i class="pi pi-instagram" />
+        <i class="pi pi-facebook" />
+      </div>
     </div>
   </footer>
 </template>
