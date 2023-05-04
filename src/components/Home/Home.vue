@@ -7,7 +7,7 @@
         </div>
         <div class="header__card flex column">
           <div class="header__text-box flex column br-15">
-            <h2 class="m-3 header__text-box--heading">
+            <h2 class="header__text-box--heading">
               Dalej się zastanawiasz jaką roślinę chcesz?
             </h2>
             <p class="header__text-box--text">
@@ -151,7 +151,7 @@
             <h2>Rośliny kwitnące</h2>
           </div>
         </div>
-        <div class="products__right-side flex m-2">
+        <div class="products__right-side flex m-1">
           <div class="products__right-side--top flex m-1">
             <div class="products--text flex m-2">
               <h2>Sukulenty</h2>

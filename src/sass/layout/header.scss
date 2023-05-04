@@ -2,18 +2,13 @@ header {
   background-color: $color-brick;
   padding: 5rem 0 6rem;
   .header {
-    // margin: 1rem;
-    @media only screen and (max-width: $small-scr) {
-      flex-direction: column;
-      margin: 0 auto;
-      justify-content: center;
-    }
+    margin: 0 auto;
     position: relative;
     justify-content: center;
     background-size: cover;
     background-position: top;
     &__slider {
-      margin: 1rem auto;
+      margin: 1rem 2rem;
       animation: moveInLeft 1s;
     }
     &__card {
@@ -22,14 +17,8 @@ header {
       align-content: center;
       width: 25%;
       animation: moveInRight 1s;
-      @media only screen and (max-width: 1500px) {
-        width: 30%;
-      }
       img {
         height: 4rem;
-      }
-      @media only screen and (max-width: $small-scr) {
-        width: 70%;
       }
     }
     &__text-box {
@@ -37,24 +26,47 @@ header {
       padding: 2rem 2rem;
       border: 0.12rem solid $color-black;
       &--heading {
+        margin: 1rem auto;
         font-size: 2.5rem;
       }
       &--text {
         font-size: 1.5rem;
       }
       transition: all 0.2s;
-      @media only screen and (max-width: 1700px) {
-        padding: 0.5rem 2rem;
-        h2 {
-          font-size: 2.2rem;
-        }
-        p {
-          font-size: 1.1rem;
-        }
-      }
     }
     &__button {
       margin-top: 3rem;
+    }
+  }
+}
+@media only screen and (max-width: $small-scr) {
+  header {
+    .header {
+      flex-direction: column;
+      &__slider {
+        margin: 0 0 2rem 4rem;
+      }
+      &__card {
+        margin: 0 auto;
+        width: 70%;
+      }
+      &__text-box {
+        margin: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1500px) {
+  header {
+    .header {
+      &__text-box {
+        &--heading {
+          font-size: 2rem;
+        }
+        &--text {
+          font-size: 0.92rem;
+        }
+      }
     }
   }
 }
