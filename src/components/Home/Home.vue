@@ -67,14 +67,14 @@
                 <span>{{ item.price }}</span>
                 <span>zł</span>
               </p>
-              <div class="products-grid__item--basket--box flex">
-                <img
-                  class="products-grid__item--basket--box-img"
-                  src="/images/cart.svg"
-                  alt="cart icon"
-                />
-                <h5 class="m-0">Add to cart</h5>
-              </div>
+
+              <button
+                class="products-grid__item--basket--box flex"
+                @click="addToBasket(item)"
+              >
+                <i class="pi pi-shopping-bag"></i>
+                <p class="m-2">Add to cart</p>
+              </button>
             </div>
           </div>
         </div>
@@ -168,56 +168,24 @@
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { allProducts } from './products'
+import { useStore } from '@/stores/store'
 
 const dropdown = ref(false)
-const allProducts = [
-  {
-    name: 'ZAMIOCULCAS ZAMIOFOLIA',
-    price: 24,
-    image: '/images/kaktus1.webp',
-  },
-  {
-    name: 'SANSEWERIA SANSEVIERIA',
-    price: 28,
-    image: '/images/kaktus3.webp',
-  },
-  {
-    name: 'KAKTUS OPUNCJA',
-    price: 28,
-    image: '/images/kaktus2.webp',
-  },
-  {
-    name: 'ZAMIOCULCAS ZAMIOFOLIA',
-    price: 24,
-    image: '/images/kaktus1.webp',
-  },
-  {
-    name: 'SANSEWERIA SANSEVIERIA',
-    price: 28,
-    image: '/images/kaktus3.webp',
-  },
-  {
-    name: 'KAKTUS OPUNCJA',
-    price: 28,
-    image: '/images/kaktus2.webp',
-  },
-  {
-    name: 'SANSEWERIA SANSEVIERIA',
-    price: 28,
-    image: '/images/kaktus3.webp',
-  },
-  {
-    name: 'KAKTUS OPUNCJA',
-    price: 28,
-    image: '/images/kaktus2.webp',
-  },
-]
+const store = useStore()
 onMounted(() => {
   const hiddenElements = document.querySelectorAll(
     '.hidden'
   ) as NodeListOf<HTMLElement>
   hiddenElements.forEach((el: HTMLElement) => observer.observe(el))
 })
+const addToBasket = (data) => {
+ store.basket.push(data)
+ console.log(data)
+ // console.log(store.basket)
+  //   store.$reset()
+}
+
 const products = ref(allProducts.slice(0, 4))
 const productsShow = () => {
   products.value = allProducts

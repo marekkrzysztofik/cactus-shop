@@ -1,9 +1,5 @@
 <template>
-  <div class="basket flex align-items-center">
-    <button
-    @click="addToBasket"
-    class=""
-  >siema</button>
+  <div class="basket flex ">
     <div class="flex column">
       <div
         v-for="product in store.basket"
@@ -61,30 +57,12 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useStore } from '@/stores/store.ts'
+import { useStore } from '@/stores/store'
+
 import { ref } from 'vue'
 
-const allProducts = [
-  {
-    name: 'ZAMIOCULCAS ZAMIOFOLIA',
-    price: 24,
-    image: '/images/kaktus1.webp',
-    quantity: 1
-  },
-  {
-    name: 'SANSEWERIA SANSEVIERIA',
-    price: 28,
-    image: '/images/kaktus3.webp',
-    quantity: 1
-  },
-]
-const addToBasket = () => {
-    store.basket.push(...allProducts)
-    console.log(store.basket)
- //   store.$reset()
-}
-const store = useStore()
 
+const store = useStore()
 
 const deleteProduct = (id) => {
   store.basket.splice(id, 1)

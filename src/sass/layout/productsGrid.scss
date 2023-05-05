@@ -49,17 +49,18 @@
       &--box {
         justify-content: center;
         align-items: center;
-        margin: 25px 0;
-        background-color: rgba($color-straw, 0.6);
+        @include bg-color-opacity($color-straw, 0.6);
         width: 150px;
         height: 50px;
         justify-content: center;
         margin: 0 auto;
         border-radius: 10px;
         transition: all 0.2s;
+        .pi {
+          font-size: 1.5rem;
+        }
         &:hover {
-          //background-color: #dd5353;
-          background-color: rgba($color-straw, 0.9);
+          @include bg-color-opacity($color-straw, 0.9);
           cursor: pointer;
         }
         &:active {

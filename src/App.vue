@@ -1,7 +1,7 @@
 <template>
   <div class="flex header__nav">
     <div class="flex align-items-center">
-      <h1 class="header__nav--heading">tu ci kaktus wyrośnie</h1>
+      <router-link to="/"><h1 class="header__nav--heading">tu ci kaktus wyrośnie</h1></router-link>
     </div>
     <nav class="flex align-items-center">
       <ul class="flex">
