@@ -25,7 +25,7 @@
         </div>
       </div>
     </header>
-    <div class="products flex column">
+    <div class="hidden products flex column">
       <h1 class="heading-secondary m-3">Zapoznaj się z naszymi</h1>
       <div class="products__box flex">
         <div class="products__left-side flex m-2">
@@ -47,8 +47,8 @@
         </div>
       </div>
     </div>
-    <h1 class="heading-secondary m-3">Nasze bestsellery</h1>
-    <div class="products-box">
+    <h1 class="heading-secondary m-3 hidden">Nasze bestsellery</h1>
+    <div class="products-box hidden">
       <div class="grid-box">
         <div class="products-grid">
           <div v-for="item in products" class="products-grid__item flex column">
@@ -98,8 +98,7 @@
         </div>
       </div>
     </div>
-
-    <div class="features">
+    <div class="hidden features">
       <div class="">
         <h1 class="features--heading">Sklep z roślinami online</h1>
         <p>To miejsce dla pasjonatów roślin</p>
@@ -165,11 +164,10 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const dropdown = ref(false)
 const allProducts = [
@@ -214,6 +212,12 @@ const allProducts = [
     image: '/images/kaktus2.webp',
   },
 ]
+onMounted(() => {
+  const hiddenElements = document.querySelectorAll(
+    '.hidden'
+  ) as NodeListOf<HTMLElement>
+  hiddenElements.forEach((el: HTMLElement) => observer.observe(el))
+})
 const products = ref(allProducts.slice(0, 4))
 const productsShow = () => {
   products.value = allProducts
@@ -223,4 +227,17 @@ const productsHide = () => {
   products.value = allProducts.slice(0, 4)
   dropdown.value = false
 }
+const observer = new IntersectionObserver(
+  (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry: IntersectionObserverEntry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        const currentEl = entry.target as HTMLElement
+        currentEl.classList.add('show')
+      } else {
+        entry.target.classList.remove('show')
+      }
+    })
+  }
+)
 </script>

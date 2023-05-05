@@ -37,8 +37,6 @@
     </div>
   </div>
   <div class="margin-top-5"><RouterView /> </div>
-
-  
   <footer class="footer flex">
     <div class="footer__box flex column">
       <h1 class="heading-primary">Kontakt</h1>
