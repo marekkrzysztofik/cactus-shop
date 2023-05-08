@@ -1,12 +1,4 @@
-@keyframes scale-bg {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    opacity: 1;
-    background-size: 110%;
-  }
-}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -84,6 +76,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.5);
+    opacity: 1;
+    transform: scale(1.1);
   }
 }

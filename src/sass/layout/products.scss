@@ -2,38 +2,23 @@
   margin: auto;
   padding: 3rem 0 4rem;
   justify-content: center;
-  width: 85vw;
-  &__box {
-    justify-content: center;
-  }
-  &__left-side {
-    width: 50vw;
+  &--box {
+    overflow: hidden;
     border-radius: 15px;
-    background-image: url(../images/zielone.jpg);
-    background-size: cover;
-    background-position: center;
-    &:hover {
-      @include scale-bg();
-    }
-  }
-  &__right-side {
-    flex-direction: column;
-    &--top {
-      @include background-image-side('../images/sukulent.jpg');
-      &:hover {
-        @include scale-bg();
-      }
-    }
-    &--bottom {
-      @include background-image-side('../images/kaktus.jpg');
-      &:hover {
-        @include scale-bg();
-      }
-    }
   }
   &--text {
-    align-items: flex-end;
-    color: $color-white;
+    position: absolute;
+    bottom: 0;
+    color: rgba($color-white, 1);
+  }
+  &--img {
+    width: 25vw;
+    height: 35vh;
+    border-radius: 15px;
+    opacity: 0.6;
+    &:hover {
+      animation: scale-img 0.5s ease-out forwards;
+    }
   }
 }
 

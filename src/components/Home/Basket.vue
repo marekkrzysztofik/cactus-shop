@@ -61,18 +61,17 @@ import { useStore } from '@/stores/store'
 
 import { ref } from 'vue'
 
-
 const store = useStore()
 
-const deleteProduct = (id) => {
+const deleteProduct = (id: number) => {
   store.basket.splice(id, 1)
 }
-const add = (id) => {
+const add = (id: number) => {
   let quantity = parseInt(store.basket[id].quantity)
   quantity += 1
   store.basket[id].quantity = quantity
 }
-const subtract = (id) => {
+const subtract = (id: number) => {
   let quantity = parseInt(store.basket[id].quantity)
   if (quantity > 1) {
     quantity -= 1

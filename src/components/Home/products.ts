@@ -1,3 +1,7 @@
+export interface Product {
+  
+}
+
 export const allProducts = [
   {
     name: 'ZAMIOCULCAS ZAMIOFOLIA',
