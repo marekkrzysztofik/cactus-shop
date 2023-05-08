@@ -1,9 +1,11 @@
 .slider {
+  margin: 1rem 2rem;
   width: 52vw;
   height: 74vh;
   border: 0.12rem solid;
   border-radius: 10px;
   overflow: hidden;
+  animation: moveInLeft 1s;
   &__slides {
     width: 500%;
     height: 500px;

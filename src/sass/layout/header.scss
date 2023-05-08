@@ -1,16 +1,6 @@
 header {
-  background-color: $color-brick;
   padding: 1rem 0 6rem;
   .header {
-    margin: 0 auto;
-    position: relative;
-    justify-content: center;
-    background-size: cover;
-    background-position: top;
-    &__slider {
-      margin: 1rem 2rem;
-      animation: moveInLeft 1s;
-    }
     &__card {
       color: $color-black;
       margin: 1rem;

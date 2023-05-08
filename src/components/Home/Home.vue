@@ -1,10 +1,8 @@
 <template>
   <div class="p">
     <header>
-      <div class="header flex">
-        <div class="header__slider">
+      <div class="header flex justify-content-center">
           <Slider />
-        </div>
         <div class="header__card flex column">
           <div class="header__text-box flex column br-15">
             <h2 class="header__text-box--heading">
