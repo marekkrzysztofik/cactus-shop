@@ -2,7 +2,7 @@
   <div class="p">
     <header>
       <div class="header flex justify-content-center">
-          <Slider />
+        <Slider />
         <div class="header__card flex column">
           <div class="header__text-box flex column br-15">
             <h2 class="header__text-box--heading">
@@ -27,7 +27,7 @@
       <h1 class="heading-secondary m-3">
         Który typ rośliny Ciebie interesuje?
       </h1>
-      <div class="flex justify-content-center">
+      <div class="products__container flex justify-content-center">
         <div class="flex column m-1">
           <div class="products--box flex m-2 position-relative">
             <img class="products--img" src="@/../images/zielone.jpg" alt="" />
@@ -79,25 +79,24 @@
     <div class="products-box hidden">
       <div class="grid-box">
         <div class="products-grid">
-          <div v-for="item in products" class="products-grid__item flex column">
-            <div class="products-grid__item--image-box">
+          <div v-for="item in products" class="flex column">
+            <div>
               <img
-                class="products-grid__item--image"
+                class="products-box--image"
                 :src="item.image"
                 alt="pizza image"
               />
             </div>
-            <h2 class="products-grid__item--header m-2">
+            <h2 class="products-box--header m-2">
               {{ item.name }}
             </h2>
-            <div class="products-grid__item--basket">
-              <p class="products-grid__item--price">
+            <div class="products-grid--basket">
+              <p>
                 <span>{{ item.price }}</span>
                 <span>zł</span>
               </p>
-
               <button
-                class="products-grid__item--basket--box flex"
+                class="products-grid--cart-button flex justify-content-center align-items-center"
                 @click="addToBasket(item)"
               >
                 <i class="pi pi-shopping-bag"></i>
@@ -128,7 +127,9 @@
     </div>
     <div class="hidden features">
       <div class="">
-        <h1 class="features--heading heading-primary">Sklep z roślinami online</h1>
+        <h1 class="features--heading heading-primary">
+          Sklep z roślinami online
+        </h1>
         <p>To miejsce dla pasjonatów roślin</p>
         <div class="features__box">
           <div class="features__box--item">
