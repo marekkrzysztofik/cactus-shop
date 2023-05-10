@@ -17,8 +17,9 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 55%);
+  grid-template-rows: repeat(1fr);
   grid-column-gap: 0;
+  grid-row-gap: 2rem;
   &--button {
     font-size: 3rem;
     background-color: inherit;

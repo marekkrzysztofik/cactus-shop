@@ -16,7 +16,7 @@
           <a class="" href="#cars">Aktualności</a>
         </li>
         <li class="m-2">
-          <a class="" href="#pricing">Galeria</a>
+          <router-link to="/products"><a>Galeria</a></router-link>
         </li>
         <li class="m-2">
           <a class="" href="#cta">Zamówienia</a>
