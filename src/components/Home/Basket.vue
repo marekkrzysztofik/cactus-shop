@@ -1,5 +1,5 @@
 <template>
-  <div class="basket flex ">
+  <div class="basket flex justify-content-center">
     <div class="flex column">
       <div
         v-for="product in store.basket"
@@ -50,9 +50,7 @@
           {{  store.pricesSum + ' zł' }}
         </h1></p>
       </div>
-      <div class="bg-dark-blue pad-20 br-radius-20 m-1">
-        Wybierz dostawę i płatność
-      </div>
+     <button class="basket__payment--btn br-15">Wybierz dostawę i płatność</button>
     </div>
   </div>
 </template>

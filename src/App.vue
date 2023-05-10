@@ -47,7 +47,7 @@
       <div class="flex">
         <i class="pi pi-whatsapp" />
         <p>123456789</p>
-      </div>
+      </div> 
     </div>
     <div class="footer__box">
       <p>Regulamin</p>
