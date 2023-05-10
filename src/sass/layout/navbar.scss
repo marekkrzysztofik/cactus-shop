@@ -13,7 +13,7 @@
   nav {
     margin-right: 1.5rem;
     @media only screen and (max-width: $small-scr) {
-     display: none;
+      display: none;
     }
   }
   &__buttons {
@@ -31,6 +31,22 @@
   &--heading {
     font-family: 'Tilt Prism', cursive;
     font-size: 35px;
+  }
+}
+.basket-counter {
+  position: absolute;
+  background-color: $color-white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: 30px;
+  top: 15px;
+  line-height: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+  p {
+    margin: 0;
+    color: $color-brick;
   }
 }
 .search-box {

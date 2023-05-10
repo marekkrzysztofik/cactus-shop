@@ -1,7 +1,11 @@
 <template>
   <div class="flex header__nav">
     <div class="flex align-items-center">
-      <router-link to="/"><h1 class="header__nav--heading">tu ci kaktus wyrośnie</h1></router-link>
+      <router-link to="/"
+        ><h1 class="header__nav--heading">
+          tu ci kaktus wyrośnie
+        </h1></router-link
+      >
     </div>
     <nav class="flex align-items-center">
       <ul class="flex">
@@ -30,13 +34,19 @@
         <button class="header__nav__buttons--btn">
           <i class="pi pi-user" />
         </button>
-        <router-link to="/basket"><button  class="header__nav__buttons--btn">
-          <i class="pi pi-shopping-bag" />
-        </button></router-link>
+        <router-link to="/basket"
+          ><button class="header__nav__buttons--btn">
+            <i class="pi pi-shopping-bag" /></button
+        ></router-link>
+      </div>
+      <div v-if="store.basket.length > 0" class="basket-counter">
+        <router-link to="/basket">
+          <p>{{ store.basket.length }}</p></router-link
+        >
       </div>
     </div>
   </div>
-  <div class="margin-top-5"><RouterView /> </div>
+  <div class="margin-top-5"><RouterView /></div>
   <footer class="footer flex">
     <div class="footer__box flex column">
       <h1 class="heading-primary">Kontakt</h1>
@@ -47,7 +57,7 @@
       <div class="flex">
         <i class="pi pi-whatsapp" />
         <p>123456789</p>
-      </div> 
+      </div>
     </div>
     <div class="footer__box">
       <p>Regulamin</p>
@@ -70,4 +80,7 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { useStore } from '@/stores/store'
+
+const store = useStore()
 </script>

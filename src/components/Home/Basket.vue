@@ -1,12 +1,13 @@
 <template>
   <div class="basket flex justify-content-center">
+    <h1 v-if="store.basket.length===0" class="m-2"><i class="pi pi-shopping-bag" /> Twój koszyk aktualnie jest pusty.</h1>
     <div class="flex column">
       <div
         v-for="product in store.basket"
         class="flex justify-content-between"
       >
         <div class="flex align-items-center">
-          <img :src="product.image" class="basket--img " alt="" />
+          <img :src="product.image" class="basket--img br-15" alt="" />
           <div>
             <h2>{{ product.name }}</h2>
             <p class="m-0">
@@ -16,7 +17,7 @@
           </div>
         </div>
         <div class="flex align-items-center">
-          <div class="quantity-box flex br-radius-20">
+          <div class="quantity-box flex br-15">
             <button
               @click="add(store.basket.indexOf(product))"
               class="btn-icon"
@@ -42,7 +43,7 @@
     </div>
     <div
       v-if="store.basket.length > 0"
-      class="basket__payment flex flex-column m-3"
+      class="basket__payment flex flex-column m-3 br-15"
     >
       <h1 class="m-1">Do zapłaty</h1>
       <div class="flex justify-content-end">
