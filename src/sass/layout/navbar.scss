@@ -48,6 +48,10 @@
     margin: 0;
     color: $color-brick;
   }
+  @media only screen and (min-width: $scr-1500) {
+    right: 65px;
+    top: 15px;
+  }
 }
 .search-box {
   width: 45%;
