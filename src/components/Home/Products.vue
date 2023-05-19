@@ -70,7 +70,5 @@ const productsHide = () => {
 const addToBasket = (data) => {
   store.basket.push(data)
   console.log(data)
-  // console.log(store.basket)
-  //   store.$reset()
 }
 </script>

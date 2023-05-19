@@ -58,8 +58,6 @@
 <script setup lang="ts">
 import { useStore } from '@/stores/store'
 
-import { ref } from 'vue'
-
 const store = useStore()
 
 const deleteProduct = (id: number) => {
