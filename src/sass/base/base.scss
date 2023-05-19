@@ -44,8 +44,8 @@ body {
   text-align: center;
 }
 .hidden {
-  opacity: 0;
-  transition: all 2s;
+  opacity: 0.2;
+  transition: all 1s;
 }
 .show {
   opacity: 1;
