@@ -10,7 +10,7 @@
           <img
             src="@/../images/Pakujemy-z-czulością-uproszczone-128-2.png"
             alt=""
-            class="img"
+            class="img" 
           />
           <h2 class="features__box--heading">Pakujemy z czułością</h2>
           <div class="features__box--description">

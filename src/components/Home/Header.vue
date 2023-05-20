@@ -15,7 +15,7 @@
           <div class="slider__slides--slide">
             <img src="@/../images/slider4.webp" alt="" />
           </div>
-        </div>
+        </div> 
       </div>
       <div class="header__card flex column">
         <div class="header__text-box flex column br-15">

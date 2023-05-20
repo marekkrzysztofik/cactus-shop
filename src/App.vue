@@ -30,20 +30,20 @@
           <img class="search__icon" src="@/../images/search.svg" alt="" />
         </button>
       </form>
-      <div class="header__nav__buttons">
-        <button class="header__nav__buttons--btn">
-          <i class="pi pi-user" />
-        </button>
-        <router-link to="/basket"
-          ><button class="header__nav__buttons--btn">
-            <i class="pi pi-shopping-bag" /></button
-        ></router-link>
-      </div>
-      <div v-if="store.basket.length > 0" class="basket-counter">
-        <router-link to="/basket">
-          <p>{{ store.basket.length }}</p></router-link
-        >
-      </div>
+    </div>
+    <div class="header__nav__buttons flex">
+      <button class="header__nav__buttons--btn">
+        <i class="pi pi-user" />
+      </button>
+      <router-link to="/basket"
+        ><button class="header__nav__buttons--btn">
+          <i class="pi pi-shopping-bag" /></button
+      ></router-link>
+    </div>
+    <div v-if="store.basket.length > 0" class="basket-counter">
+      <router-link to="/basket">
+        <p>{{ store.basket.length }}</p></router-link
+      >
     </div>
   </div>
   <div class="margin-top-5"><RouterView /></div>

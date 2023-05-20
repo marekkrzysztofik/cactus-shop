@@ -6,9 +6,9 @@
   );
   padding: 3rem;
   @media only screen and (max-width: $medium-scr) {
-    padding: 0;
+    padding: 1rem;
   }
-  &__box { 
+  &__box {
     display: grid;
     justify-content: center;
     padding: 2%;
@@ -17,7 +17,11 @@
     @media only screen and (max-width: $medium-scr) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-    } 
+    }
+    @media only screen and (max-width: $small-scr) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
     &--item {
       padding: 2.5rem;
       text-align: center;
