@@ -2,12 +2,19 @@
   margin: auto;
   padding: 3rem 0 4rem;
   justify-content: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: auto;
+    justify-content: center;
+  }
   &--box {
     cursor: pointer;
     overflow: hidden;
     border-radius: 15px;
     &:hover {
-      animation: scale-img 0.5s ease-out forwards; 
+      animation: scale-img 0.5s ease-out forwards;
     }
   }
   &--text {
@@ -17,7 +24,7 @@
     transform: translate(-50%, 50%);
     color: rgba($color-white, 1);
     h2 {
-      font-size: 2rem; 
+      font-size: 2rem;
       font-weight: 900;
     }
   }
@@ -33,10 +40,11 @@
     margin: 3rem auto;
     padding: 0;
     &__container {
-      margin: auto;
-      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1fr);
     }
     &--img {
+      width: 45vw;
       height: 22.5vh;
       padding: 0;
     }
