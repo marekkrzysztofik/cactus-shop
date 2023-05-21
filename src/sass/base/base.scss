@@ -3,8 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; /* now box-sizing will be an inherited property */
-} 
+  box-sizing: inherit;
+}
 body {
   background-color: $color-brick;
   color: $color-black;

@@ -1,10 +1,12 @@
 <template>
   <section class="section">
-    <h1 class="heading-secondary m-3">Nasze bestsellery</h1>
+    <div class="products-heading">
+      <h1 class="heading-secondary m-3">Nasze bestsellery</h1>
+    </div>  
     <div class="products-box">
       <div class="grid-box">
         <div class="products-grid">
-          <div v-for="item in products" class="flex column">
+          <article v-for="item in products" class="flex column">
             <div>
               <img
                 class="products-box--image"
@@ -28,7 +30,7 @@
                 <p class="m-2">Add to cart</p>
               </button>
             </div>
-          </div>
+          </article>
         </div>
         <div class="p-3">
           <button
@@ -69,7 +71,7 @@ const productsHide = () => {
   products.value = allProducts.slice(0, 4)
   dropdown.value = false
 }
-const addToBasket = (data) => {
+const addToBasket = (data: any) => {
   store.basket.push(data)
   console.log(data)
 }

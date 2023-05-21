@@ -2,8 +2,8 @@
   <main class="section">
     <Header />
     <Categories />
-    <Products />
     <Features />
+    <Products />
   </main>
 </template>
 <script setup lang="ts">
