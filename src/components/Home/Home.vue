@@ -1,10 +1,10 @@
 <template>
-  <div class="p">
+  <main class="section">
     <Header />
     <Categories />
     <Products />
     <Features />
-  </div>
+  </main>
 </template>
 <script setup lang="ts">
 import { onMounted } from 'vue'

@@ -2,7 +2,7 @@ export interface Product {
   name: string
   price: number
   image: string
-  quantity: 1
+  quantity: number
 }
 
 export const allProducts = [

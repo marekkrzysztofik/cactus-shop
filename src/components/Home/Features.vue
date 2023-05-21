@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden features">
+  <section class="hidden features"> 
     <div class="">
       <h1 class="features--heading heading-primary">
         Sklep z roślinami online
@@ -66,5 +66,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
