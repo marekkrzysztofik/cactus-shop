@@ -1,0 +1,52 @@
+.products {
+  margin: auto;
+  padding: 3rem 0 4rem;
+  justify-content: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: auto;
+    justify-content: center;
+  }
+  &--box {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    &:hover {
+      animation: scale-img 0.5s ease-out forwards;
+    }
+  }
+  &--text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: rgba($color-white, 1);
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
+  &--img {
+    width: 25vw;
+    height: 35vh;
+    border-radius: 15px;
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: $small-scr) {
+  .products {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1fr);
+    }
+    &--img {
+      width: 45vw;
+      height: 22.5vh;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography.scss';
+@import 'components/button';
+@import 'layout/header.scss';
+@import 'layout/navbar.scss';
+@import 'layout/categories.scss';
+@import 'layout/features.scss';
+@import 'layout/productsGrid.scss';
+@import 'layout/footer.scss';

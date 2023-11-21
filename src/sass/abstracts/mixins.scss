@@ -1,0 +1,10 @@
+@mixin bg-color-opacity($col, $op) {
+  background-color: rgba($col, $op);
+}
+@mixin bg-gradient($to) {
+  background-image: linear-gradient(
+    to $to,
+    rgba($color-brick, 0.1),
+    rgba($color-straw, 0.5)
+  );
+}

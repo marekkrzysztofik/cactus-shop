@@ -1,0 +1,120 @@
+.header__nav {
+  margin: 0 auto;
+  padding: 0 2rem;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  height: 5rem;
+  background-color: $color-brick;
+  color: $color-straw;
+  z-index: 1;
+  nav {
+    margin-right: 1.5rem;
+  }
+  &__buttons {
+    &--btn {
+      margin: 0 0 0 1rem;
+      font-size: 2rem;
+      border: 0;
+      color: $color-straw;
+      background-color: inherit;
+    }
+  }
+  a {
+    color: #e4d96f;
+  }
+  &--heading {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 35px;
+  }
+}
+.basket-counter {
+  position: absolute;
+  background-color: $color-white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: 30px;
+  top: 15px;
+  line-height: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+  p {
+    margin: 0;
+    color: $color-brick;
+  }
+  @media only screen and (min-width: $scr-1500) {
+    right: 65px;
+    top: 15px;
+  }
+}
+.search-box {
+  width: 40%;
+  justify-content: end;
+  align-items: center;
+}
+.search {
+  width: 40%;
+  display: flex;
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: $color-black;
+    @include bg-color-opacity($color-straw, 0.6);
+    border: none;
+    padding: 0.3rem 2rem;
+    border-radius: 100px;
+    width: 80%;
+    transition: all 0.2s;
+    margin-right: -3.25rem;
+    &:focus {
+      outline: none;
+      width: 100%;
+      @include bg-color-opacity($color-straw, 0.7);
+    }
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: $color-black;
+    }
+  }
+  &__button {
+    border: none;
+    background-color: inherit;
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  &__icon {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+@media only screen and (max-width: $small-scr) {
+  .header__nav {
+    nav {
+      display: none;
+    }
+    &__buttons {
+      &--btn {
+        font-size: 1.5rem;
+      }
+    }
+    &--heading {
+      font-family: 'Tilt Prism', cursive;
+      font-size: 23px;
+    }
+  }
+  .search-box {
+    width: max-content;
+  }
+  .search {
+    width: 90%;
+    display: flex;
+    &__input {
+      width: 100%;
+      margin-right: -1.5rem;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: $color-brick;
+  color: $color-black;
+  box-sizing: border-box;
+  line-height: 1.7;
+  h1 {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+.br-15 {
+  border-radius: 15px;
+}
+.column {
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+}
+.section {
+  position: relative;
+  text-align: center;
+}
+.hidden {
+  opacity: 0.2;
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+}
+.margin-top-5 {
+  margin-top: 5rem;
+}

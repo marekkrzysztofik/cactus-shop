@@ -1,0 +1,115 @@
+header {
+  margin: 0 auto;
+  padding: 1rem 0 6rem;
+
+  .header {
+    &__card {
+      color: $color-black;
+      margin: 1rem;
+      align-content: center;
+      width: 25%;
+      animation: moveInRight 1s;
+
+      img {
+        height: 4rem;
+      }
+    }
+
+    &__text-box {
+      align-items: center;
+      padding: 2rem 2rem;
+      border: 0.12rem solid $color-black;
+
+      &--heading {
+        margin: 1rem auto;
+        font-size: 2.5rem;
+      }
+
+      &--text {
+        font-size: 1.5rem;
+      }
+
+      transition: all 0.2s;
+    }
+
+    &__button {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.slider {
+  margin: 1rem 2rem;
+  width: 52vw;
+  height: 74vh;
+  border: 0.12rem solid;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: moveInLeft 1s;
+
+  &__slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    animation: slider 20s infinite;
+
+    &--slide {
+      width: 20%;
+
+      img {
+        width: 52vw;
+        height: 74vh;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  header {
+    .header {
+      &__text-box {
+        &--heading {
+          font-size: 2rem;
+        }
+
+        &--text {
+          font-size: 0.92rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-scr) {
+  header {
+    .header {
+      flex-direction: column;
+
+      &__card {
+        margin: 0 auto;
+        width: 85%;
+      }
+
+      &__text-box {
+        &--heading {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  .slider {
+    margin: 1rem auto;
+    width: 90%;
+    height: 50vh;
+
+    &__slides {
+      &--slide {
+        img {
+          width: 100%;
+          height: 50vh;
+        }
+      }
+    }
+  }
+}
